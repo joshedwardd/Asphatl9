@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+.bg_image{
+    position: relative;
+    height: 100vh;
+    background-image: url('../Assets/productsPage4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.showcase{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+   
+    border-radius: 10px;
+   
+}
+
+.showcase_title{
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+.showcase_row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.showcase_item{
+    margin: 10px 30px;
+    text-align: center;
+   
+}
+
+.showcase_item img{
+    width: 350px; 
+    
+    
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.showcase_item p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.showcase_row:last-child{
+    margin-bottom: 0;
+}
+
+.prev-button{
+    position: absolute;
+    bottom: 10px;
+    right: 80px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.prev-button:hover{
+    background-color: #555;
+}
+
+
+
+@media (max-width: 768px) {
+    .showcase {
+        top: 50%;
+        padding: 10px;
+    }
+
+    .showcase_title {
+        font-size: 30px;
+        top: -30px;
+    }
+
+    .showcase_row {
+        flex-direction: column;
+    }
+
+    .showcase_item {
+        margin: 10px 0;
+    }
+
+    .showcase_item img {
+        width: 100%;
+        max-width: none;
+        border-radius: 20px;
+    }
+
+    .navbar_menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dropdown_menu {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_item.dropdown:hover .dropdown_menu {
+        display: block;
+    }
+
+    .dropdown_links {
+        padding: 10px 20px;
+        display: block;
+    }
+}

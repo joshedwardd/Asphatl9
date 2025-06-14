@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg_image {
+    position: relative;
+    height: 100vh;
+    background-image: url('../Assets/eventPage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.news_row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.news_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news_item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.news_content {
+    color: #ffffff;
+    width: 100%;
+}
+
+.news_content h1.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellow;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.news_content span{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.news_content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.news_content p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .news {
+        flex-direction: column;
+    }
+
+    .news_item {
+        width: 100%;
+    }
+}

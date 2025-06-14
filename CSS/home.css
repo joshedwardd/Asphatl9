@@ -1,0 +1,77 @@
+body {margin:0;padding: 0;}
+
+#mainVideo{
+    position: relative;
+}
+#mainVideo video{
+    height: 100vh;
+    width: 100%;
+    background-position: absolute;
+    display: flex;
+    z-index: 10;
+    object-fit:cover;
+}
+
+.content{
+   color: white;
+   height: 100%;
+   width: 100%;
+   z-index: 20;
+   position: absolute;
+   top: 0;
+   left: 0;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.content h1{
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 3px;
+    letter-spacing: 1.5px;
+    
+}
+
+
+.content p{
+    color: rgb(255, 255, 255);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.content .subscribe_button{
+    margin: 20px;
+    background-image: linear-gradient(to top, #ff0000 0%, #b51515 100%);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 2px;
+    
+    margin-top: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.35s;
+    outline: none;
+    
+}
+
+.content .subscribe_button .text{
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5px;
+}
+.content .subscribe_button:hover{
+    padding: 12.5px 32.5px;
+}
+
+
+.footer{
+    background-color: rgb(49, 41, 41);
+}
+
+.footen_content{
+    color: #fff;
+    margin: 20px;
+}
+
+

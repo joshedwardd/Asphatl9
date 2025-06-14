@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.bg_image{
+    position: relative;
+    min-height: 100vh; 
+    background-image: url('../Assets/eventPage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 100px; 
+}
+
+.event_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.video_section{
+    width: 50%;
+    height: auto;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.video_section video{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info_section h1, h2{
+    color: yellow;
+}
+.info_section{
+    width: 40%;
+    color: #fff;
+    font-size: 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.prize_pool .value{
+    font-size: 60px;
+}
+
+
+.prize_pool, .event_stats{
+    margin-bottom: 20px;
+}
+
+.sponsors_section{
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
+.sponsors_section h1{
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.sponsors_list, .sponsors_list2{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap; 
+    margin-bottom: 20px; 
+}
+
+.sponsors_list li img, .sponsors_list2 li img{
+    width: 150px;
+    height: auto;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .event_container {
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .video_section, .info_section {
+        width: 100%;
+        padding: 0;
+    }
+
+    .info_section {
+        padding-top: 20px;
+        text-align: center; 
+    }
+
+    .sponsors_section {
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .sponsors_list, .sponsors_list2 {
+        gap: 20px; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .sponsors_list li img, .sponsors_list2 li img {
+        width: 100px; 
+    }
+}

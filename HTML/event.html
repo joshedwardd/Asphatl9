@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="..\CSS\navbar.css">
+    <link rel="stylesheet" href="..\CSS\footer.css">
+    <link rel="stylesheet" href="..\CSS\event.css">
+    
+</head>
+<body>
+<!-- navbar -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="home.html" id="navbar_logo">Aspathl</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="home.html" class="navbar_links">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="products.html" class="navbar_links">Products</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="news.html" class="navbar_links">News</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- body  -->
+    <div class="bg_image" >
+        <div class="event_container">
+            <div class="video_section" autoplay loop muted>
+                <video controls autoplay loop muted>
+                    <source src="..\Assets\eventVideo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="info_section">
+                <div class="prize_pool">
+                    <h1>Prize Pool</h1>
+                    <p id="prize_pool_value" class="value">$19123012</p>
+                </div>
+                <div class="event_stats">
+                    <h2>Event Statistics</h2>
+                    <p>Number of Events Held: <span id="events_held">32</span></p>
+                    <p>Number of Participants: <span id="participants">1084</span></p>
+                    <p>Total Races: <span id="total_races"></span>781</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="sponsors_section">
+            <h1>Our Sponsors</h1>
+            <ul class="sponsors_list">
+                <li><img src="..\Assets\hyperx-logo.png" ></li>
+                <li><img src="..\Assets\nvidia-logo.png"></li>
+                <li><img src="..\Assets\logitech-logo.png"></li>
+            </ul>
+            <ul class="sponsors_list2">
+                <li><img src="..\Assets\Asus-Logo.png" ></li>
+                <li class="AMD_Logo"><img src="..\Assets\Twitch-logo.png"></li>
+                <li><img src="..\Assets\Intel-logo.png"></li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer_container">
+            <div class="footer_contents">
+                <h1>Aspathl 9: Rejends</h1>
+                <div class="list">
+                    <ul>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://id-id.facebook.com/">Facebook</a></li>
+                        <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer_bottom">
+            <p>&copy; 2024: Gamefolt & RJstudio</p>
+        </div>
+    </footer>
+
+    <script src="..\JS\navbar.js"></script>
+    <script src="..\JS\event.js"></script>
+</body>
+</html>
